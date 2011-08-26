@@ -80,10 +80,7 @@ class Symlinks(Egg):
         # currently support symlink removal, see uninstall_symlinks below.
         return []
 
-
-    def update(self):
-        pass
-
+    update = install
 
     def _get_resource_filename(self, uri):
         logger = logging.getLogger(self.name)
